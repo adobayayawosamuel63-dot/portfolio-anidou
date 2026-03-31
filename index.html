@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio anidou</title>
     <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
 </head>
@@ -17,10 +18,11 @@
     <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
+        <li><a href="#competences">Compétences</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
-</div>
+   </div>
    <div class="terminal-window">
   <div class="terminal-header">
     <div class="buttons">
@@ -54,6 +56,7 @@
   </div>
 </div>
 </section>
+
 <section class="about" id="about" style="background-color: #1a1a1a; opacity: 1;">
     <h2 style="text-align: center;" class="titre_about">About Me</h2>
     <div class="container-about">
@@ -68,9 +71,99 @@
     </div>
 
 </section>
+
+<section id="competences">
+    <h2 class="titre_about" style="text-align: center; margin-bottom:  20px; margin-top: 50px;">Compétences</h2>
+    <div class="container-competences">
+        <div class="competence">
+            <h3>Réseaux</h3>
+            <p>Conception, configuration et gestion de réseaux locaux (LAN) et étendus (WAN).</p>
+        </div>
+        <div class="competence">
+            <h3>Sécurité</h3>
+            <p>Implémentation de mesures de sécurité pour protéger les données et les systèmes contre les menaces.</p>
+        </div>
+        <div class="competence">
+            <h3>Administration Système</h3>
+            <p>Gestion des systèmes d'exploitation, des serveurs et des services réseau pour assurer une performance optimale.</p>
+        </div>
+        <div class="competence">
+            <h3>Virtualisation</h3>
+            <p>Utilisation de technologies de virtualisation pour optimiser l'utilisation des ressources et améliorer la flexibilité.</p>
+        </div>
+    </div>
+</section>
+
 <section class="projets" id="projects">
-    <h2 class="titre_about" style="text-align: center; margin-bottom: 20px;">Projets</h2>
+    <h2 class="titre_about" style="text-align: center; margin-bottom: 20px;">Projets Supports Windows</h2>
     <div class="boite-projets">
+        <div class="card-container">
+            <div class="card">
+                <img src="./profil.jpg" alt="photo projets" width="260px">
+                <div class="card-content">titre projet</div>
+            </div>
+            <div class="card">
+                <img src="./profil.jpg" alt="photo projets" width="260px">
+                <div class="card-content">titre projet</div>
+            </div>           
+           <div class="card">
+                <img src="./profil.jpg" alt="photo projets" width="260px">
+                <div class="card-content">titre projet</div>
+            </div>            
+            <div class="card">
+                <img src="./profil.jpg" alt="photo projets" width="260px">
+                <div class="card-content">titre projet</div>
+            </div>
+        </div>
+    </div>
+
+        <h2 class="titre_about" style="text-align: center; margin-bottom: 20px; margin-top: 30px;">Projets Support linux</h2>
+
+        <div class="boite-projets">
+        <div class="card-container">
+            <div class="card">
+                <img src="./profil.jpg" alt="photo projets" width="260px">
+                <div class="card-content">titre projet</div>
+            </div>
+            <div class="card">
+                <img src="./profil.jpg" alt="photo projets" width="260px">
+                <div class="card-content">titre projet</div>
+            </div>           
+           <div class="card">
+                <img src="./profil.jpg" alt="photo projets" width="260px">
+                <div class="card-content">titre projet</div>
+            </div>            
+            <div class="card">
+                <img src="./profil.jpg" alt="photo projets" width="260px">
+                <div class="card-content">titre projet</div>
+            </div>
+        </div>
+    </div>
+
+            <h2 class="titre_about" style="text-align: center; margin-bottom: 20px;margin-top: 30px;">Projets Administration réseau</h2>
+        <div class="boite-projets">
+        <div class="card-container">
+            <div class="card">
+                <img src="./profil.jpg" alt="photo projets" width="260px">
+                <div class="card-content">titre projet</div>
+            </div>
+            <div class="card">
+                <img src="./profil.jpg" alt="photo projets" width="260px">
+                <div class="card-content">titre projet</div>
+            </div>           
+           <div class="card">
+                <img src="./profil.jpg" alt="photo projets" width="260px">
+                <div class="card-content">titre projet</div>
+            </div>            
+            <div class="card">
+                <img src="./profil.jpg" alt="photo projets" width="260px">
+                <div class="card-content">titre projet</div>
+            </div>
+        </div>
+    </div>
+            <h2 class="titre_about" style="text-align: center; margin-bottom: 20px;margin-top: 30px;">Projets Cybersécurité</h2>
+
+        <div class="boite-projets">
         <div class="card-container">
             <div class="card">
                 <img src="./profil.jpg" alt="photo projets" width="260px">
@@ -92,6 +185,24 @@
     </div>
 </section>
 
+<section class="contact" id="contact">
+    <h2 class="titre_about" style="text-align: center; padding: 70px;">Contact</h2>
+    <div class="container-contact-section">
+    <div class="container-contact">
+       <label for="name">Name:</label>
+       <input type="text" id="name" name="name" required>
+       <label for="email">Email:</label>
+       <input type="email" id="email" name="email" required>
+       <label for="message">Message:</label>
+       <textarea id="message" name="message" rows="5" required></textarea>
+       <button type="submit">Send</button>
+    </div>
+      <div class="social-icons">
+        <i class="fa-brands fa-github"></i>
+        <i class="fa-brands fa-linkedin"></i>
+  </div>
+</div>
+</section>
 
 
 
