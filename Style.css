@@ -326,60 +326,65 @@ h2:hover {
     height: 100vh;
 }
 
-#contact .container-contact {
+.contact-form {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    width: 400px;
+    width: 300px;
     margin: 0 auto;
 }
-#contact .container-contact label {
-    font-size: 1.2rem;
-}
-#contact .container-contact input,
-#contact .container-contact textarea {
+.contact-form input,
+.contact-form textarea {
     padding: 10px;
     border: none;
     border-radius: 4px;
-    font-size: 1rem;
-}
-#contact .container-contact button {
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    background-color: var(--term-text);
-    color: var(--accent-color);
-    font-size: 1.2rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-#contact .container-contact button:hover {
-    background-color: var(--accent-color);
+    background: var(--term-bg);
     color: var(--term-text);
+    font-size: 14px;
+}   
+.contact-form button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background: var(--term-text);
+    color: var(--term-bg);
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+    background: var(--term-text);
+    color: var(--term-bg);
     box-shadow: 0 0 10px var(--term-text), 0 0 20px var(--term-text), 0 0 30px var(--term-text);
 }
 
-i {
-    color: rgb(0, 0, 0) !important;
-    font-size: 30px; /* Pour être sûr de bien les voir au début */
-}
+.contact-form textarea {
+   height: 100px;
+   resize: vertical;
 
+}
 .social-icons {
     display: flex;
-    gap: 20px;
     justify-content: center;
-    margin-top: 20px;
+    gap: 20px;
+    margin-top: 4px;
 }
 .social-icons i {
     color: var(--term-text);
-    font-size: 30px;
-    transition: color 0.3s ease, transform 0.3s ease;
+    font-size: 25px;
+    transition: color 0.3s ease;
 }
 .social-icons i:hover {
-    color: var(--accent-color);
-    transform: scale(1.2);
-    text-shadow: 0 0 10px var(--accent-color), 0 0 20px var(--accent-color), 0 0 30px var(--accent-color);
+    color: var(--term-bg);
+    text-shadow: 0 0 10px var(--term-text), 0 0 20px var(--term-text), 0 0 30px var(--term-text);
 }
+
+
+
+
+
+
 
 
 
