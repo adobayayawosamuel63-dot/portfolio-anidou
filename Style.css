@@ -614,10 +614,10 @@ h2:hover {
     max-height: max-content !important;
 }
 .sm{
-    display: none;
+    display: none !important;
 }
 .mot-about{
-    width: 100%;
+    width: 100% !important;
     font-size: 1.5rem;
     color: var(--text-color);
     padding-top: 20px;
