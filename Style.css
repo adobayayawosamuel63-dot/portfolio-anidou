@@ -596,7 +596,7 @@ h2:hover {
     padding: 50px 20px;
     background: var(--bg-color);
     color: var(--text-color);
-    max-height: max-content;
+    max-height: max-content !important;
 }
 }
 
