@@ -552,7 +552,12 @@ h2:hover {
     padding: 10px;
     border: 1px solid #ccc;
     max-height: max-content;
-    
+}
+#projects {
+    padding: 50px 20px;
+    background: var(--bg-color);
+    color: var(--text-color);
+    max-height: max-content;
 }}
 @media screen and (max-width: 480px) {
     *{
