@@ -562,7 +562,18 @@ h2:hover {
  .sm {
     display: none;
 
-}}
+}
+.mot-about{
+    width: 100%;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 2px solid var(--accent-color);
+    border-bottom: 2px solid var(--accent-color);
+}
+
+}
 @media screen and (max-width: 480px) {
     *{
         margin: 0;
@@ -604,6 +615,15 @@ h2:hover {
 }
 .sm{
     display: none;
+}
+.mot-about{
+    width: 100%;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 2px solid var(--accent-color);
+    border-bottom: 2px solid var(--accent-color);
 }
 }
 
