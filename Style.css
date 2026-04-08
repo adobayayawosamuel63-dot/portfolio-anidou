@@ -247,7 +247,7 @@ h2:hover {
     padding: 50px 20px;
     background: var(--bg-color);
     color: var(--text-color);
-    height: 400vh;
+    max-height: 400vh;
 }
 
 .card{
@@ -277,9 +277,11 @@ h2:hover {
 }
 
 .card-container {
-   display: flex;
+   display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
-    justify-content: center;
+    justify-content: center; 
+
 }
 
 #competences {
@@ -292,6 +294,13 @@ h2:hover {
 }
 #competences .container-competences {
     display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.boite-projets {
+    /* display: flex; */
+    flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
 }
@@ -378,6 +387,206 @@ h2:hover {
 .social-icons i:hover {
     color: var(--term-bg);
     text-shadow: 0 0 10px var(--term-text), 0 0 20px var(--term-text), 0 0 30px var(--term-text);
+}
+/* Masquer par défaut */
+.hidden {
+    display: none;
+}
+
+/* Style optionnel pour le contenu déballé */
+#contentBox {
+    margin-top: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: var(--term-bg);
+}
+.cacheBoutton {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.cacheBoutton:hover {
+    background-color: var(--text-color);
+    color: var(--accent-color);
+    box-shadow: 0 0 10px var(--text-color), 0 0 20px var(--text-color), 0 0 30px var(--text-color);
+}
+.containButton {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* Styles de base */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #333;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Style du bouton Hamburger */
+.hamburger {
+    display: none; /* Caché sur ordinateur */
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: white;
+    transition: 0.3s; /* Pour l'animation */
+}
+
+/* --- Mobile (Ecran < 768px) --- */
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: flex;
+        z-index: 10;
+    }
+
+    .nav-links {
+        position: fixed;
+        right: -100%; /* Caché à droite */
+        top: 0;
+        height: 100vh;
+        width: 70%;
+        background: #444;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: 0.5s;
+    }
+
+    /* Quand le menu est ouvert */
+    .nav-links.active {
+        right: 0;
+    }
+
+    /* Animation du burger en "X" */
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 6px);
+    }
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -6px);
+    }
+    .container-competences{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-height: max-content;
+}
+#about {
+    height: max-content;
+}
+#competences {
+    height: max-content;
+}
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: var(--accent-color);
+    border-bottom: 2px solid var(--term-text);
+    display: none;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    padding-left: 15rem;
+    z-index: 1000;
+}
+
+@media screen and (max-width: 768px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+        font-size: 17px;
+    }
+    #navbar {
+        display: flex;
+    }
+  .nav-bar{
+    display: none;
+  }
+  .container-about{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-height: max-content;
+}
+  .boite-projets {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+#contentBox {
+    margin-top: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    max-height: max-content;
+    
+}}
+@media screen and (max-width: 480px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+        font-size: 15px;
+    }
+    #navbar {
+        display: flex;
+    }
+  .nav-bar{
+    display: none;
+  }
+  .boite-projets {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.container-competences{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-height: max-content;
+}
+#about {
+    height: max-content;
+}
+#competences {
+    height: max-content;
+}
 }
 
 
