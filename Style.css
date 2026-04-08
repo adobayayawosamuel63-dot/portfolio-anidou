@@ -558,6 +558,10 @@ h2:hover {
     background: var(--bg-color);
     color: var(--text-color);
     max-height: max-content;
+}
+ .sm {
+    display: none;
+
 }}
 @media screen and (max-width: 480px) {
     *{
@@ -597,6 +601,9 @@ h2:hover {
     background: var(--bg-color);
     color: var(--text-color);
     max-height: max-content !important;
+}
+.sm{
+    display: none;
 }
 }
 
