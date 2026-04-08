@@ -574,7 +574,7 @@ h2:hover {
 }
 
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 100px) and (max-width: 470px) {
     *{
         margin: 0;
         padding: 0;
@@ -618,7 +618,7 @@ h2:hover {
 }
 .mot-about{
     width: 100% !important;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: var(--text-color);
     padding-top: 20px;
     padding-bottom: 20px;
