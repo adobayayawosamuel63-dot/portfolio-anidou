@@ -592,6 +592,12 @@ h2:hover {
 #competences {
     height: max-content;
 }
+#projects {
+    padding: 50px 20px;
+    background: var(--bg-color);
+    color: var(--text-color);
+    max-height: max-content;
+}
 }
 
 
